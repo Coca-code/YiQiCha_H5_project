@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    overflow: auto;
+    /* winphone8和android4+ */
+    -webkit-overflow-scrolling: touch;
+    /* ios5+ */
+    z-index: 1;
+}
+
+
+/*evaluateDetail page wrapper*/
+
+div.evalu_wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.shadow {
+    -moz-box-shadow: 0px 1px 4px #c7c7c7;
+    -webkit-box-shadow: 0px 1px 4px #c7c7c7;
+    box-shadow: 0px 1px 4px #c7c7c7;
+}
+
+
+/*top title*/
+
+.radar-wrapper p  {
+    position: relative;
+    min-width: 60%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: .4533rem;
+}
+
+
+/*＊＊＊＊＊＊＊Comment＊＊＊＊＊＊＊*/
+
+div.comm_wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 102;
+}
+
+.comm_wrapper ul {
+    width: 100%;
+    white-space: nowrap;
+    list-style: none;
+    margin: 0px;
+}
+
+.comm_wrapper ul li {
+    float: left;
+    display: block;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ccc;
+    z-index: 97;
+}
+
+.usr_img {
+    position: absolute;
+    width: 1.0933rem;
+    height: 1.0933rem;
+    left: .4133rem;
+    margin-top: .4133rem;
+    border: 1px solid #ccc;
+    -moz-box-border-radius: 50%;
+    -webkit-box-border-radius: 50%;
+    border-radius: 50%;
+    background: url(../img/YQC_LOGO.png) no-repeat center center;
+}
+
+.comm_content {
+    float: right;
+    width: 8rem;
+    /*right: .2667rem;*/
+    margin-top: .4133rem;
+    margin-bottom: .4133rem;
+}
+
+.comm_info {
+    width: 8rem;
+    height: .4rem;
+    line-height: .4rem;
+    clear: both;
+}
+
+.usr_name {
+    float: left;
+    font-size: .3867rem;
+    color: #0164bf;
+}
+
+.comm_time {
+    float: right;
+    margin-right: .4rem;
+    font-size: .3333rem;
+    color: #ccc;
+}
+
+.comm_text {
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 7.88rem;
+    margin-top: .3333rem;
+    line-height: 1.3em;
+    font-size: .4rem;
+    color: #283e53;
+    word-break: normal;
+    white-space: normal;
+}
+
+
+/*＊＊＊＊＊＊＊＊Loading（Begin）＊＊＊＊＊＊＊＊ */
+
+.loading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #fff;
+    z-index: 901;
+}
+
+.loading div {
+    position: absolute;
+    width: 2.8rem;
+    height: 2.8rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: url(../img/YQC-loading.gif) no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+
+/*＊＊＊＊＊＊＊＊Loading（End）＊＊＊＊＊＊＊＊ */
+
+
+/*＊＊＊＊＊＊＊＊Radar（Begin）＊＊＊＊＊＊＊＊*/
+
+.radar-wrapper {
+    width: 100%;
+    height: 7.7333rem;
+    background: -webkit-linear-gradient(#0163bf, #009ec0);
+    background: -o-linear-gradient(#0163bf, #009ec0);
+    background: linear-gradient(#0163bf, #009ec0);
+    z-index: 7;
+}
+
+.myChart {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 101;
+    text-align: center;
+}
+
+
+/*＊＊＊＊＊＊＊＊Radar（End）＊＊＊＊＊＊＊＊*/
+/*****Popwin-Begin*****/
+
+.popwin-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  /* background-color: rgba(0, 0, 0, 0.5);*/
+   
+  
+    z-index: 49;
+}
+.blur{
+	filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */    
+    -webkit-filter: blur(3px); /* Chrome, Opera */
+       -moz-filter: blur(3px);
+        -ms-filter: blur(3px);    
+            filter: blur(3px);    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3, MakeShadow=false); /* IE6~IE9 */ 
+}
+.download-banner {
+    position: absolute;
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    bottom: 0;
+    left: 0;
+    background-color: #283e53;
+    z-index: 50;
+}
+
+.download-banner p {
+	padding-left:.25rem;
+    width: 75%;
+    line-height: 0.5rem;
+   /* color: #a8a8a8;*/
+  color:rgb(234,206,63);
+    word-break: normal;
+    white-space: normal;
+    text-align: center;
+    font-size: .32rem;
+}
+ 
+.download-banner p:nth-of-type(1) {
+    margin-top: 0.3rem;
+}
+
+button.download {
+    position: absolute;
+    width: 18%;
+    height: .8rem;
+    top: 0;
+    right: .4rem;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    background-color: #44b7ff;
+    font-size: .5rem;
+    font-weight: normal;
+    color: #fff;
+ 
+}
+
+
+/*****Popwin-End*****/
+/*Shake style*/
+
+.shake {
+    animation: shake .5s 3;
+    -webkit-animation: shake .5s 3;
+    /* Safari 和 Chrome */
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes shake {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}

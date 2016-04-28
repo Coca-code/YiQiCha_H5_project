@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    /* winphone8和android4+ */
+    -webkit-overflow-scrolling: touch;
+    /* ios5+ */
+    z-index: 1;
+}
+
+.annual-report-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* 年报详情 */
+
+.annual-report-item-1 {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.annual-report-item-2,
+.annual-report-item-3,
+.annual-report-item-4,
+.annual-report-item-5,
+.annual-report-item-6,
+.annual-report-item-7,
+.annual-report-item-8,
+.annual-report-item-9 {
+    float: left;
+    width: 100%;
+    margin-top: .2667rem;
+    z-index: 2;
+}
+
+.annual-report-item-1 ul,
+.annual-report-item-2 ul,
+.annual-report-item-3 ul,
+.annual-report-item-4 ul,
+.annual-report-item-5 ul,
+.annual-report-item-6 ul,
+.annual-report-item-7 ul,
+.annual-report-item-8 ul,
+.annual-report-item-9 ul{
+    list-style: none;
+    margin: 0;
+}
+
+.annual-report-item-1 ul li,
+.annual-report-item-2 ul li,
+.annual-report-item-4 ul li,
+.annual-report-item-5 ul li,
+.annual-report-item-6 ul li,
+.annual-report-item-7 ul li,
+.annual-report-item-8 ul li,
+.annual-report-item-9 ul li{
+    float: left;
+    width: 100%;
+    min-height: 1.0667rem;
+    margin-left: .3467rem;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.annual-report-item-1 ul li,
+.annual-report-item-2 ul li,
+.annual-report-item-4 ul li,
+.annual-report-item-5 ul li {
+    line-height: 1.0667rem;
+}
+
+
+/* 最后一个li没底边 */
+
+.annual-report-item-1 ul li:last-child,
+.annual-report-item-2 ul li:last-child,
+.annual-report-item-3 ul li:last-child,
+.annual-report-item-4 ul li:last-child,
+.annual-report-item-5 ul li:last-child,
+.annual-report-item-6 ul li:last-child,
+.annual-report-item-7 ul li:last-child,
+.annual-report-item-8 ul li:last-child,
+.annual-report-item-9 ul li:last-child{
+    border-bottom: none;
+}
+
+
+/* 模块一 */
+
+.s1-li1 p:nth-of-type(1),
+.s1-li2 p:nth-of-type(1),
+.s1-li3 p:nth-of-type(1),
+.s1-li4 p:nth-of-type(1),
+.s1-li5 p:nth-of-type(1),
+.s1-li6 p:nth-of-type(1),
+.s2-li1 p:nth-of-type(1),
+.s2-li2 p:nth-of-type(1),
+.s2-li3 p:nth-of-type(1) {
+    float: left;
+    font-size: .4rem;
+    color: #939ea9;
+}
+
+.s1-li1 p:nth-of-type(2),
+.s1-li2 p:nth-of-type(2),
+.s1-li3 p:nth-of-type(2),
+.s1-li4 p:nth-of-type(2),
+.s1-li5 p:nth-of-type(2),
+.s1-li6 p:nth-of-type(2) {
+    /*float: right;*/
+    position: absolute;
+    right: .3467rem;
+    font-size: .4rem;
+    color: #283e53;
+}
+
+
+/* 模块二 */
+
+.s2-li1 p:nth-of-type(2),
+.s2-li2 p:nth-of-type(2),
+.s2-li3 p:nth-of-type(2) {
+    position: absolute;
+    right: 1.2267rem;
+    font-size: .4rem;
+    color: #283e53;
+}
+
+.s2-li1,
+.s2-li2,
+.s2-li3,
+.s3-li1,
+.s4-li1 {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.s2-li1 span,
+.s2-li2 span,
+.s2-li3 span {
+    position: absolute;
+    display: block;
+    width: .2133rem;
+    height: .4rem;
+    top: 50%;
+    right: .6933rem;
+    transform: translateY(-50%);
+    background: url(../img/annual-arro.png) no-repeat;
+    background-size: cover;
+}
+
+
+/* 模块三 */
+
+.annual-report-item-3 ul li {
+    float: left;
+    width: 100%;
+    min-height: 1.4667rem;
+    margin-left: .3467rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.s3-li1 {
+    line-height: .618rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.s3-li1-p1 {
+    font-size: .4rem;
+    color: #939ea9;
+    margin-top: .2667rem;
+}
+
+.s3-li1-p2{
+    font-size: .4rem;
+    color: #4f93e7;
+    margin-bottom: .2667rem;
+}
+
+
+.s-li1 p:nth-of-type(2) {
+    font-size: .4rem;
+    color: #4f93e7;
+    margin-bottom: .2667rem;
+}
+
+.s3-li2 {
+    width: 100%;
+    /*height: 3.0667rem;*/
+    height: 3.5rem;
+}
+
+.s3-li2 div {
+    float: left;
+    width: 49.8%;
+    margin-top: .2667rem;
+    border-right: 1px solid #ccc;
+}
+
+.s3-li2-p1,
+.s3-li2-p3,
+.s3-li2-p5,
+.s3-li2-p7 {
+    font-size: .4rem;
+    color: #939ea9;
+    margin-bottom: .24rem;
+}
+
+.s3-li2-p3,
+.s3-li2-p7 {
+    margin-top: .4rem;
+}
+
+.s3-li2-p2,
+.s3-li2-p4,
+.s3-li2-p6,
+.s3-li2-p8 {
+    font-size: .4rem;
+    color: #283e53;
+    margin-top: .24rem;
+}
+
+.s3-li2-p5,
+.s3-li2-p6,
+.s3-li2-p7,
+.s3-li2-p8 {
+    margin-left: .3467rem;
+}
+
+
+/* 模块四 */
+
+.s4-li1 p {
+    line-height: .618rem;
+}
+
+.s4-li1-p1{
+    font-size: .4rem;
+    color: #939ea9;
+    margin-top: .2667rem;
+}
+
+.s4-li1-p2{
+    font-size: .4rem;
+    color: #4f93e7;
+    margin-bottom: .2667rem;
+}
+
+
+/* 模块五 */
+
+.s5-li1 p,
+.s5-li2 p {
+    line-height: .618rem;
+}
+
+.s5-li1-p1,
+.s5-li2-p1{
+    font-size: .4rem;
+    color: #283e53;
+    margin-top: .2667rem;
+}
+
+.s5-li1-p2,
+.s5-li2-p2{
+    font-size: .4rem;
+    color: #939ea9;
+    margin-top: .24rem;
+    margin-bottom: .2667rem;
+}
+
+
+/* 模块六 */
+
+.annual-report-item-6 li p {
+    
+    margin-top: .2667rem;
+}
+
+.annual-report-item-6 li p:first-child {
+    float: left;
+    font-size: .4rem;
+    color: #939ea9;
+}
+
+.annual-report-item-6 li p:last-child{
+    float: right;
+    font-size: .4rem;
+    color: #283e53;
+    margin-right: .6933rem;
+}
+
+/* 模块八 */
+.s8-li1-div-left{
+    float: left;
+    width: 85%;
+}
+
+.s8-li1-p3,
+.s8-li1-p5{
+    font-size: .4rem;
+   color: #939ea9;
+   margin-top: .24rem;
+   margin-bottom: .2667rem;
+}
+
+.s8-li1-p2,
+.s8-li1-p4{
+    font-size: .4rem;
+    color: #283e53;
+    margin-top: .2667rem;
+}
+
+.s8-li1-div-left div{
+    float: left;
+    width: 50%;
+}
+
+.s8-li1-p1{
+    font-size: .4rem;
+    color: #283e53;
+    margin-top: .2667rem;
+    margin-bottom: .4rem;
+}
+
+.s8-li1-div-left p:not(:first-child){
+    line-height: .618rem;
+}
+
+.s8-li1-div-right{
+    float: right;
+    width: 10%;
+
+}
+
+/* 每个的标题 */
+
+div.report-item-title,
+div.report-item-content {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+
+/* 标题 */
+
+.report-item-title {
+    position: relative;
+    transform-style: preserve-3d;
+    height: 1.0667rem;
+    line-height: 1.0667rem;
+    padding-left: .3467rem;
+    line-height: 1.0667rem;
+}
+
+.report-title-text {
+    float: left;
+    width: 60%;
+    height: .6667rem;
+    line-height: .6667rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    padding-left: .2667rem;
+    text-align: left;
+    font-size: .4267rem;
+}
+
+.report-item-title span {
+    display: block;
+    position: absolute;
+    width: .48rem;
+    height: .48rem;
+    right: .6933rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.c-1 {
+    border-left: .10667rem solid #4f93e7;
+    color: #4f93e7;
+}
+
+.c-2 {
+    border-left: .10667rem solid #5176cc;
+    color: #5176cc;
+}
+
+.c-3 {
+    border-left: .10667rem solid #ebc171;
+    color: #ebc171;
+}
+
+.c-4 {
+    border-left: .10667rem solid #6f80b7;
+    color: #6f80b7;
+}
+
+.c-5 {
+    border-left: .10667rem solid #e5865a;
+    color: #e5865a;
+}
+
+.c-6 {
+    border-left: .10667rem solid #8b76da;
+    color: #8b76da;
+}
+
+.c-7 {
+    border-left: .10667rem solid #d06591;
+    color: #d06591;
+}
+
+.c-8 {
+    border-left: .10667rem solid #4ebdaf;
+    color: #4ebdaf;
+}
+
+.c-9 {
+    border-left: .10667rem solid #729d67;
+    color: #729d67;
+}
+
+.sp-2 {
+    background: url(../img/annual-contact.png) no-repeat;
+    background-size: cover;
+}
+
+
+/* 内容 */
+
+.report-item-content {
+    float: left;
+    min-height: 1rem;
+    /*padding-left: .3467rem;*/
+}
+
+.content-null{
+    float: right;
+    margin-right: .6933rem;
+    font-size: .4rem;
+    color: #939ea9;
+}
+
+/*Shake style*/
+
+.shake {
+    animation: shake .5s 3;
+    -webkit-animation: shake .5s 3;
+    /* Safari 和 Chrome */
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes shake {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+/*****Popwin-Begin*****/
+
+.popwin-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 49;
+}
+
+.download-banner {
+    position: absolute;
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 50;
+}
+
+.download-banner p {
+    width: 75%;
+    line-height: 0.5rem;
+    color: #a8a8a8;
+    word-break: normal;
+    white-space: normal;
+    text-align: center;
+    font-size: .32rem;
+}
+
+.download-banner p:nth-of-type(1) {
+    margin-top: 0.3rem;
+}
+
+button.download {
+    position: absolute;
+    width: 18%;
+    height: .8rem;
+    top: 0;
+    right: .4rem;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    background-color: #44b7ff;
+    font-size: .5rem;
+    font-weight: normal;
+    color: #fff;
+    border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+}
+
+
+/*****Popwin-End*****/

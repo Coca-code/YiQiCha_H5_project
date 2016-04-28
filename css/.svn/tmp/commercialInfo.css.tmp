@@ -1,0 +1,801 @@
+                * {
+                font-family: 'MicroSoft Yahei', Helvetica;
+                font-weight: normal;
+            }
+            
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                background: #f2f2f2;
+                width: 100%;
+                height: 100%;
+                -webkit-overflow-scrolling: touch;
+                overflow: hidden;
+                z-index: 1;
+            }
+            
+            .commercial-info-wrapper {
+                overflow: auto;
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+            }
+            /* 内容标题样式 */
+            
+            .content-t {
+                position: relative;
+                float: left;
+                width: 100%;
+                height: 1.0667rem;
+                line-height: 1.0667rem;
+                margin-left: 0;
+                text-align: left;
+                border-bottom: 1px solid #ccc;
+                z-index: 5;
+            }
+            /*分割线*/
+            
+            .devide {
+                float: left;
+                width: 100%;
+                height: .2667rem;
+                margin: 0;
+                background-color: #f2f2f2;
+                z-index: 8;
+            }
+            
+            .abs-mid-ver {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            /*Sections*/
+            
+            .reg-info,
+            .shareholders-info,
+            .main-menber,
+            .branch {
+                width: 100%;
+                z-index: 2;
+            }
+            /****** 顶部Banner条 ******/
+            
+            .commercial-corp-name {
+                float: left;
+                width: 100%;
+                height: 1.0667rem;
+                line-height: 1.0667rem;
+                margin-left: 0;
+                margin-top: 0;
+                background-color: #f2f2f2;
+                text-align: center;
+                color: #939ea9;
+                font-size: .3467rem;
+                /*Shadow*/
+                -webkit-box-sizing: content-box;
+                -moz-box-sizing: content-box;
+                box-sizing: content-box;
+                border: none;
+                color: black;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                -webkit-box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.2);
+                box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.2);
+                z-index: 99;
+            }
+            /****** Moudel-1 ******/
+            
+            .reg-info-title p,
+            .shareholders-info-title p,
+            .main-menber-title p,
+            .branch-title p {
+                position: absolute;
+                width: auto;
+                height: .5333rem;
+                line-height: .5333rem;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: .3467rem;
+                margin: auto;
+                padding-left: .2667rem;
+                font-size: .4267rem;
+            }
+            
+            .reg-info-title p {
+                border-left: .15rem solid #4f93e7;
+                color: #4f93e7;
+            }
+            
+            .shareholders-info-title p {
+                border-left: .15rem solid #534fe7;
+                color: #534fe7;
+            }
+            
+            .main-menber-title p {
+                border-left: .15rem solid #b04fe7;
+                color: #b04fe7;
+            }
+            
+            .branch-title p {
+                border-left: .15rem solid #e7a94b;
+                color: #e7a94b;
+            }
+           
+            .reg-info-content-1,
+            .reg-info-content-2,
+            .reg-info-content-3,
+            .reg-info-content-4,
+            .reg-info-content-5,
+            .reg-info-content-6,
+            .shareholders-info-content-1,
+            .main-menber-content-1,
+            .branch-content-1 {
+                float: left;
+                display: inline;
+                width: 100%;
+                min-height: 1rem;
+                background-color: none;
+                border-bottom: 1px solid #ccc;
+            }
+            
+            .reg-info-content-1 p,
+            .reg-info-content-2 p,
+            .reg-info-content-3 p,
+            .reg-info-content-4 p,
+            .reg-info-content-6 p,
+            .shareholders-info-content-1 p {
+                margin-left: .3467rem;
+            }
+            
+            .reg-info-content-2 p:nth-child(odd),
+            .reg-info-content-3 p:nth-child(odd),
+            .reg-info-content-4 p:nth-child(odd),
+            .reg-info-content-5 p:nth-child(odd),
+            .reg-info-content-6 p:nth-child(odd),
+            .shareholders-info-content-1 p:nth-child(odd) {
+                color: #939ea9;
+                font-size: .3467rem;
+            }
+            
+            .shareholders-info-content-1 p:nth-child(odd) {
+                margin-top: .2667rem;
+            }
+            
+            p.reg-create-time,
+            p.operating-state,
+            p.reg-credit-code,
+            p.reg-corp-type {
+                margin-top: .4rem;
+            }
+            
+            .reg-info-content-1 p:nth-child(even),
+            .reg-info-content-2 p:nth-child(even),
+            .reg-info-content-3 p:nth-child(even),
+            .reg-info-content-4 p:nth-child(even),
+            .reg-info-content-6 p:nth-child(even),
+            .shareholders-info-content-1 p:nth-child(even) {
+                margin-top: .2667rem;
+                font-size: .4rem;
+                color: #283e53;
+            }
+            /* 第一模块 第五内容 */
+            
+            .reg-info-content-5 p {
+                margin-left: .3467rem;
+            }
+            
+            .run-time-rang {
+                width: 100%;
+                height: auto;
+                margin-bottom: .2667rem;
+                overflow: hidden;
+                background-color: none;
+                text-align: left;
+            }
+            
+            .run-time-rang span,
+            .run-time-rang b {
+                display: block;
+                float: left;
+                line-height: .618rem;
+                margin-top: .2667rem;
+                margin-left: .2667rem;
+                font-size: .4rem;
+                color: #283e53;
+            }
+            
+            .run-rang,
+            .addr {
+                font-size: .4rem;
+                color: #283e53;
+            }
+            /* 第二模块第偶数个p样式 */
+            
+            .shareholders-info-content-1 p:nth-child(even) {
+                color: #399eff;
+                font-weight: 700;
+                margin-bottom: .2667rem;
+            }
+            /* 第三模块部分样式 */
+
+            .main-menber-content-1 div{
+                   float:left;
+                    width: 100%;
+                    height: 1rem;
+                    display: inline;
+
+            }
+            
+            .main-menber-content-1 div span {
+               float: left;
+                color: #939ea9;
+                font-size: .3467rem;
+                margin-left: .3467rem;
+            }
+            /* 第四模块部分样式 */
+            
+            /*.main-menber-content-1 p,*/
+            .branch-content-1 p {
+                height: 1.0667rem;
+                line-height: 1.0667rem;
+                margin-top: .2667rem;
+                padding-left: .3467rem;
+                padding-bottom: .2667rem;
+                font-size: .4rem;
+                color: #283e53;
+                border-bottom: 1px solid #ccc;
+            }
+            
+            .mian-menber-content-p{
+            	  
+                    height: 1.0667rem;
+                    line-height: 1.0667rem;
+                    margin-top: .2667rem;
+                 /*  padding-left: .3467rem;*/
+                    /*padding-bottom: .2667rem;*/
+                    font-size: .4rem;
+                    color: #283e53;
+                   border-bottom: 1px solid #ccc;
+            	}
+            .mian-menber-content-p p{
+            	padding-left:.3467rem;
+            	display:inline-block;
+            	margin-right:.3467rem;
+            	}
+            .reg-info-content-3 p:nth-child(odd),
+            .reg-info-content-4 p:nth-child(odd),
+            .reg-info-content-5 p:nth-child(odd) {
+                padding-top: .2667rem;
+            }
+            
+            .reg-info-content-3 p:nth-child(even),
+            .reg-info-content-4 p:nth-child(even) {
+                margin-right: .3467rem;
+                padding-bottom: .2667rem;
+                line-height: .618rem;
+            }
+            
+            .reg-info-content-6 p:nth-child(even) {
+                margin-right: .3467rem;
+                line-height: .618rem;
+            }
+            /* icon样式 */
+            
+            .oper-icon {
+                display: block;
+                float: right;
+                width: .48rem;
+                height: .48rem;
+                margin-top: .2933rem;
+                margin-right: .3467rem;
+            }
+            
+            .oper-icon-2 {
+                background: url(../img/plus-blue.png)no-repeat center center;
+                background-size: cover;
+            }
+            
+            .oper-icon-3 {
+                background: url(../img/plus-purple.png)no-repeat center center;
+                background-size: cover;
+            }
+            
+            .oper-icon-4 {
+                background: url(../img/plus-orange.png)no-repeat center center;
+                background-size: cover;
+            }
+            /*****Popwin-Begin*****/
+            
+            .popwin-wrapper {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 49;
+            }
+            
+            .download-banner {
+                position: absolute;
+                width: 100%;
+                height: 1.6rem;
+                line-height: 1.6rem;
+                bottom: 0;
+                left: 0;
+                background-color: #000;
+                z-index: 50;
+            }
+            
+            .download-banner p {
+                width: 75%;
+                line-height: 0.5rem;
+                color: #a8a8a8;
+                word-break: normal;
+                white-space: normal;
+                text-align: center;
+                font-size: .32rem;
+            }
+            
+            .download-banner p:nth-of-type(1) {
+                margin-top: 0.3rem;
+            }
+            
+            button.download {
+                position: absolute;
+                width: 18%;
+                height: .8rem;
+                top: 0;
+                right: .4rem;
+                bottom: 0;
+                margin: auto;
+                border: none;
+                background-color: #44b7ff;
+                font-size: .5rem;
+                font-weight: normal;
+                color: #fff;
+                border-radius: .2rem;
+                -moz-border-radius: .2rem;
+                -webkit-border-radius: .2rem;
+            }
+            /*****Popwin-End*****/
+            /* Android4.0+，ios 兼容代码*/
+            
+            @media all and (-webkit-transform-3d) {
+                * {
+                    margin: 0;
+                    padding: 0;
+                     font-weight: normal;
+                }
+                html,
+                body {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #f2f2f2;
+                    overflow: auto;
+                    /* winphone8和android4+ */
+                    -webkit-overflow-scrolling: touch;
+                    /* ios5+ */
+                    z-index: 1;
+                }
+                .commercial-info-wrapper {
+                    width: 100%;
+                    overflow: auto;
+                    background-color: #fff;
+                }
+                /* 内容标题样式 */
+                .content-t {
+                    position: relative;
+                    float: left;
+                    width: 100%;
+                    height: 1.0667rem;
+                    line-height: 1.0667rem;
+                    margin-left: 0;
+                    text-align: left;
+                    border-bottom: 1px solid #ccc;
+                    z-index: 5;
+                }
+                /*分割线*/
+                .devide {
+                    float: left;
+                    width: 100%;
+                    height: .2667rem;
+                    margin: 0;
+                    background-color: #f2f2f2;
+                    z-index: 8;
+                }
+                .abs-mid-ver {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+                /*Sections*/
+                .reg-info,
+                .shareholders-info,
+                .main-menber,
+                .branch {
+                    width: 100%;
+                    z-index: 2;
+                }
+                /****** 顶部Banner条 ******/
+                .commercial-corp-name {
+                    float: left;
+                    width: 100%;
+                    height: 1.0667rem;
+                    line-height: 1.0667rem;
+                    margin-left: 0;
+                    margin-top: 0;
+                    background-color: #f2f2f2;
+                    text-align: center;
+                    color: #939ea9;
+                    font-size: .3467rem;
+                    /*Shadow*/
+                    -webkit-box-sizing: content-box;
+                    -moz-box-sizing: content-box;
+                    box-sizing: content-box;
+                    border: none;
+                    color: black;
+                    -o-text-overflow: ellipsis;
+                    text-overflow: ellipsis;
+                    -webkit-box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.2);
+                    z-index: 99;
+                }
+                /****** Moudel-1 ******/
+                .reg-info-title p,
+                .shareholders-info-title p,
+                .main-menber-title p,
+                .branch-title p {
+                    position: absolute;
+                    width: auto;
+                    height: .5333rem;
+                    line-height: .5333rem;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: .3467rem;
+                    margin: auto;
+                    padding-left: .2667rem;
+                    font-size: .4267rem;
+                }
+                .reg-info-title p {
+                    border-left: .15rem solid #4f93e7;
+                    color: #4f93e7;
+                }
+                .shareholders-info-title p {
+                    border-left: .15rem solid #534fe7;
+                    color: #534fe7;
+                }
+                .main-menber-title p {
+                    border-left: .15rem solid #b04fe7;
+                    color: #b04fe7;
+                }
+                .branch-title p {
+                    border-left: .15rem solid #e7a94b;
+                    color: #e7a94b;
+                }
+                .reg-info-content-1,
+                .reg-info-content-2,
+                .reg-info-content-3,
+                .reg-info-content-4,
+                .reg-info-content-5,
+                .reg-info-content-6,
+                .shareholders-info-content-1,
+                .main-menber-content-1,
+                .branch-content-1 {
+                    float: left;
+                    display: inline;
+                    width: 100%;
+                    min-height: 1rem;
+                    background-color: none;
+                    border-bottom: 1px solid #ccc;
+                }
+                .reg-info-content-1-left,
+                .reg-info-content-1-right,
+                .reg-info-content-2-left,
+                .reg-info-content-2-right,
+                .reg-info-content-6-left,
+                .reg-info-content-6-right {
+                    float: left;
+                    width: 50%;
+                    min-height: 1rem;
+                    padding-top: .2667rem;
+                    padding-bottom: .2667rem;
+                    /*border-bottom: 1px solid #f2f2f2;*/
+                }
+                .reg-info-content-1-left div {
+                    float: left;
+                    display: inline;
+                    width: 100%;
+                    height: .4rem;
+                    line-height: .4rem;
+                    font-size: .4rem;
+                    color: #283e53;
+                    margin-top: .5rem;
+                    margin-bottom: .4rem;
+                }
+                .reg-info-content-1-left div p {
+                    float: left;
+                }
+                .reg-info-content-1 p,
+                .reg-info-content-2 p,
+                .reg-info-content-3 p,
+                .reg-info-content-4 p,
+                .reg-info-content-6 p,
+                .shareholders-info-content-1 p {
+                    margin-left: .3467rem;
+                  
+                }
+               .reg-info-content-3 p,{
+               	  font-size:.3467rem;
+ 
+               	}
+                .reg-info-content-2 p:nth-child(odd),
+                .reg-info-content-3 p:nth-child(odd),
+                .reg-info-content-4 p:nth-child(odd),
+                .reg-info-content-5 p:nth-child(odd),
+                .reg-info-content-6 p:nth-child(odd),
+                .shareholders-info-content-1 p:nth-child(odd) {
+                    color: #939ea9;
+                    font-size: .3467rem;
+                }
+                .shareholders-info-content-1 p:nth-child(odd) {
+                    margin-top: .2667rem;
+                }
+                p.reg-create-time,
+                p.operating-state,
+                p.reg-credit-code,
+                p.reg-corp-type {
+                    color: #939ea9;
+                    margin-top: .4rem;
+                }
+                .reg-info-content-1-right{
+                   font-size:.4rem;
+                }
+                 .reg-info-content-1-left{
+                   font-size:.4rem;
+                }
+                .reg-capital,
+                .representative {
+                    color: #939ea9;
+                    
+                }
+                .operating-state-content,
+                .reg-create-time-content {
+                    margin-top: .2667rem;
+                    font-size: .4rem;
+                    color: #283e53;
+                }
+                .reg-info-content-1 p:nth-child(even),
+                .reg-info-content-2 p:nth-child(even),
+                .reg-info-content-3 p:nth-child(even),
+                .reg-info-content-4 p:nth-child(even),
+                .reg-info-content-6 p:nth-child(even),
+                .shareholders-info-content-1 p:nth-child(even) {
+                    margin-top: .2667rem;
+                    font-size: .4rem;
+                    color: #283e53;
+                }
+                /* 第一模块 第五内容 */
+                .reg-info-content-5 p {
+                    margin-left: .3467rem;
+                }
+                .run-time-rang {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: .2667rem;
+                    overflow: hidden;
+                    background-color: none;
+                    text-align: left;
+                }
+                .run-time-rang span,
+                .run-time-rang b {
+                    display: block;
+                    float: left;
+                    line-height: .618rem;
+                    margin-top: .2667rem;
+                    margin-left: .2667rem;
+                    font-size: .4rem;
+                    color: #283e53;
+                }
+                .run-rang,
+                .addr {
+                    color: #283e53;
+                }
+                .run-range-content {
+                    font-size: .4rem!important;
+                    font-weight: normal;
+                    color: #283e53;
+                }
+                /* 第二模块第偶数个p样式 */
+                .shareholders-info-content-1 p:nth-child(even) {
+                    color: #399eff;
+                    font-weight: 700;
+                    margin-bottom: .2667rem;
+                }
+                /* 第三模块部分样式 */
+
+                .main-menber-content-1 div{
+                    float: left;
+                    width: 100%;
+                    height: 1rem;
+                    display: inline;
+
+                }
+                .main-menber-content-1 div span {
+                    float: left;
+                    color: #939ea9;
+                    font-size: .3467rem;
+                    margin-left: .3467rem;
+                }
+                /* 第四模块部分样式 */
+                /*.main-menber-content-1 div p,*/
+                .branch-content-1 p {
+                    width: auto;
+                    height: 1.0667rem;
+                    line-height: 1.0667rem;
+                    margin-top: .2667rem;
+                    padding-left: .3467rem;
+                    padding-bottom: .2667rem;
+                    font-size: .4rem;
+                    color: #283e53;
+                    border-bottom: 1px solid #ccc;
+                }
+          
+                .reg-capital{
+                	font-size:.4rem !important;}
+                .reg-info-content-3 p:nth-child(odd),
+                .reg-info-content-4 p:nth-child(odd),
+                .reg-info-content-5 p:nth-child(odd) {
+                    padding-top: .2667rem;
+                    
+                }
+                .reg-info-content-3 p:nth-child(even),
+                .reg-info-content-4 p:nth-child(even) {
+                    margin-right: .3467rem;
+                    padding-bottom: .2667rem;
+                    line-height: .618rem;
+                }
+                .reg-info-content-6 p:nth-child(even) {
+                    margin-right: .3467rem;
+                    line-height: .618rem;
+                }
+                /* icon样式 */
+                .oper-icon {
+                    display: block;
+                    float: right;
+                    width: .48rem;
+                    height: .48rem;
+                    margin-top: .2933rem;
+                    margin-right: .3467rem;
+                }
+                .oper-icon-2 {
+                    background: url(../img/plus-blue.png)no-repeat center center;
+                    background-size: cover;
+                }
+                .oper-icon-3 {
+                    background: url(../img/plus-purple.png)no-repeat center center;
+                    background-size: cover;
+                }
+                .oper-icon-4 {
+                    background: url(../img/plus-orange.png)no-repeat center center;
+                    background-size: cover;
+                }
+                /*****Popwin-Begin*****/
+                .popwin-wrapper {
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    z-index: 49;
+                }
+                .download-banner {
+                    position: absolute;
+                    width: 100%;
+                    height: 1.6rem;
+                    line-height: 1.6rem;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #000;
+                    z-index: 50;
+                }
+                .download-banner p {
+                    width: 75%;
+                    line-height: 0.5rem;
+                    color: #a8a8a8;
+                    word-break: normal;
+                    white-space: normal;
+                    text-align: center;
+                    font-size: .32rem;
+                }
+                .download-banner p:nth-of-type(1) {
+                    margin-top: 0.3rem;
+                }
+                button.download {
+                    position: absolute;
+                    width: 18%;
+                    height: .8rem;
+                    top: 0;
+                    right: .4rem;
+                    bottom: 0;
+                    margin: auto;
+                    border: none;
+                    background-color: #44b7ff;
+                    font-size: .5rem;
+                    font-weight: normal;
+                    color: #fff;
+                    border-radius: .2rem;
+                    -moz-border-radius: .2rem;
+                    -webkit-border-radius: .2rem;
+                }
+                /*****Popwin-End*****/
+                /*Shake style*/
+                .shake {
+                    animation: shake .5s 3;
+                    -webkit-animation: shake .5s 3;
+                    /* Safari 和 Chrome */
+                }
+                @-webkit-keyframes shake {
+                    from {
+                        -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+                    }
+                    10%,
+                    20% {
+                        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+                        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+                    }
+                    30%,
+                    50%,
+                    70%,
+                    90% {
+                        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+                        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+                    }
+                    40%,
+                    60%,
+                    80% {
+                        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+                        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+                    }
+                    to {
+                        -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+                    }
+                }
+                @keyframes shake {
+                    from {
+                        -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+                    }
+                    10%,
+                    20% {
+                        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+                        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+                    }
+                    30%,
+                    50%,
+                    70%,
+                    90% {
+                        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+                        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+                    }
+                    40%,
+                    60%,
+                    80% {
+                        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+                        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+                    }
+                    to {
+                        -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+                    }
+                }

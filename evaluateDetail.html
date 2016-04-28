@@ -1,0 +1,119 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta content="maximum-dpr=2" name="flexible" />
+    <title>评价详情</title>
+    <link rel="stylesheet" href="css/evaluateDetail.css">
+</head>
+
+<body>
+    <div class="evalu_wrapper">
+        <!--loading  -->
+        <div class="loading">
+            <div></div>
+        </div>
+       
+        <!-- Rahar -->
+        <div class="radar-wrapper">
+            <canvas class="myChart" id="myChart" width="210" height="210"></canvas>
+             <!--公司名-->
+       
+            <p> 上海本宁网络科技有限公司</p>
+      
+        </div>
+
+        
+
+
+        <!--Comment-->
+        <div class="comm_wrapper">
+            <ul>
+                <li>
+                    <div class="usr_img"></div>
+                    <div class="comm_content">
+                        <p class="comm_info">
+                            <span class="usr_name">XiaoMing</span>
+                            <span class="comm_time">2016-4-15</span>
+                        </p>
+                        <p class="comm_text">
+                            我是在等待一个女孩，还是在等待沉沦苦海，一段情默默灌溉，没有人去管花谢花开，无法肯定的爱,一段情... ...
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="usr_img"></div>
+                    <div class="comm_content">
+                        <p class="comm_info">
+                            <span class="usr_name">大翼</span>
+                            <span class="comm_time">2016-3-11</span>
+                        </p>
+                        <p class="comm_text">
+                            同志们，同志们！路就在脚下，确定目标，找对方法，一步步取实现吧。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="usr_img"></div>
+                    <div class="comm_content">
+                        <p class="comm_info">
+                            <span class="usr_name">小武</span>
+                            <span class="comm_time">2016-3-2</span>
+                        </p>
+                        <p class="comm_text">
+                            不错，不错，very good!
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+    <script src="./js/utils/Chart-1.0.1-beta.4.js"></script>
+    <script src="./js/evaluateDetail.js"></script>
+    <script>
+    var data = {
+        labels: ["产品质量", "售后服务", "员工情况", "履约情况", "社会责任"],
+        datasets: [
+
+            {
+                fillColor: "rgba(255,255,255,0.5)",
+                strokeWidth: 1,
+                strokeColor: "rgba(255,255,255,1)",
+                data: [8, 6, 7, 4, 10]
+            }
+        ]
+    };
+
+    var options = {
+        scaleShowLine: true,
+        //五根轴线颜色
+        angleLineColor: "rgba(255,255,255,.381)",
+        //圈线颜色
+        scaleLineColor: "rgba(255,255,255,.381)",
+        //文字
+        // scaleFontSize : 30,
+        scaleFontStyle: "normal",
+        pointLabelFontColor: "#fff",
+        //中间图形
+        scaleBackdropColor: "rgba(255,255,255,1)",
+        datasetStrokeWidth: 1,
+        //是否显示每个点的小圈
+        pointDot : false
+
+
+    }
+
+    $(function() {
+        var ctx = document.getElementById("myChart").getContext("2d");
+        new Chart(ctx).Radar(data, options);
+    })
+    </script>
+</body>
+
+</html>

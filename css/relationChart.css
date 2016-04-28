@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-ajust: none;
+    -webkit-user-select: none;
+}
+
+.relation-chart-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* 公司标题 */
+
+.corp-name {
+    float: left;
+    width: 100%;
+    height: 1.0667rem;
+    line-height: 1.0667rem;
+    margin-left: 0;
+    margin-top: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: #939ea9;
+    font-size: .3467rem;
+    z-index: 99;
+}
+
+
+/***** 详细面板 *****/
+
+section.detail-panel {
+    position: absolute;
+    width: 100%;
+    top: 1.0667rem;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 8999;
+    /*Shadow*/
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    color: black;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.2);
+}
+
+.base-info {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: .618rem;
+    line-height: .618rem;
+}
+
+
+/* 公司名 */
+
+.base-info p {
+    float: left;
+    width: 80%;
+    margin-left: .3467rem;
+    color: #4f93e7;
+    font-size: .24rem
+}
+
+
+/* 删除按钮 */
+
+.base-info button {
+     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: .4267rem;
+    height: .4267rem;
+    right: .3467rem;
+    background-color: #fff;
+    border: none;
+    color: #ccc;
+    font-size: .2667rem;
+    font-weight: 700;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    padding: .1rem;
+}
+
+
+/* 基本信息 */
+
+.panel-base-info {
+    width: 100%;
+}
+
+.panel-base-info ul {
+    list-style: none;
+    margin: 0;
+}
+
+.panel-base-info ul li {
+    float: left;
+    width: 100%;
+    font-size: .24rem;
+    /* border-bottom:1px solid #ccc;*/
+}
+
+.panel-base-info li p {
+    float: left;
+    line-height: .618rem;
+}
+
+.panel-base-info li p:nth-child(odd) {
+    margin-left: .3467rem;
+    color: #939ea9;
+}
+
+.panel-base-info li p:nth-child(even) {
+    margin-left: .3467rem;
+    color: #283e53;
+}
+
+
+/* Tab nav */
+
+.tab-wrapper {
+    width: 100%;
+}
+
+.tab-nav {
+    width: 94%;
+}
+
+.tab-nav {
+    float: left;
+    height: auto;
+    margin-top: .3rem;
+    margin-left: .3467rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+.tab-nav ul li {
+    float: left;
+    width: auto;
+    line-height: .618rem;
+    margin-bottom: -2px;
+    padding-left: .12rem;
+    padding-right: .12rem;
+    color: #283e53;
+    font-size: .24rem;
+    text-align: center;
+}
+
+.tab-nav ul li:first-child {
+    margin-left: .3467rem;
+}
+
+.nav-border {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 3px solid #fff;
+    border-radius: .1rem .1rem 0 0;
+    -webkit-border-radius: .1rem .1rem 0 0;
+    -moz-border-radius: .1rem .1rem 0 0;
+}
+
+.div-show {
+    display: block;
+}
+
+
+/* Tab content */
+
+.tab-content {
+    float: left;
+    width: 94%;
+    min-height: 1rem;
+    margin-top: .3467rem;
+    margin-left: .3467rem;
+    margin-bottom: .3467rem;
+    border: 1px dashed #ccc;
+}
+
+.tab-content ul li {
+    list-style: none;
+    line-height: .618rem;
+    padding-left: .3467rem;
+    font-size: .24rem;
+    color: #283e53;
+}
+
+
+/* 奇数行颜色 */
+
+.tab-content-div1 ul li:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tab-content-div1 ul li:nth-child(even) {
+    background-color: #eaf4fc;
+}
+
+.tab-content-div2 ul li:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tab-content-div2 ul li:nth-child(even) {
+    background-color: #eaf4fc;
+}
+
+.tab-content-div3 ul li:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tab-content-div3 ul li:nth-child(even) {
+    background-color: #eaf4fc;
+}
+
+
+/*.tab-content div:first-child {
+      background-color: red;
+}
+*/
+
+
+/* ＊＊＊＊＊＊＊图域 ＊＊＊＊＊＊＊*/
+
+.chart {
+    position: absolute;
+    /*  min-width: 4.2667rem;*/
+    min-height: 5.0667rem;
+    top: 2.6rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nodes-class {
+    fill-opacity: .6;
+}
+
+
+/* 版权 */
+
+p.copy-right {
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: .1rem;
+    text-align: center;
+    color: gray;
+    font-size: .3rem;
+    font-weight: normal;
+}

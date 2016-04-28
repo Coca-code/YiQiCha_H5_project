@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+     overflow-x: hidden;
+    /* winphone8和android4+ */
+    -webkit-overflow-scrolling: touch;
+    /* ios5+ */
+    z-index: 1;
+}
+
+.share-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #fff;
+    z-index: 2;
+}
+
+
+/*＊＊＊＊＊＊＊＊＊Module-1 ＊＊＊＊＊＊＊＊＊*/
+
+section.app-introduce {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.bg-top {
+    max-width: 100%;
+    height: 5.7867rem;
+    background: url(../img/share-bg-top.png) no-repeat;
+    background-size: 100%;
+    z-index: 2;
+}
+
+.logo-container {
+    float: left;
+    width:95%;
+    margin-top: .4rem;
+    margin-left: .4rem;
+    margin-bottom: .88rem;
+    overflow: hidden;
+}
+
+
+/* Logo和名字 */
+
+.share-logo {
+    float: left;
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../img/share-logo.png) no-repeat;
+    background-size: cover;
+}
+
+.share-app-name {
+    float: left;
+    width: 70%;
+   /* height: 1.2rem;
+    line-height: 1.2rem;*/
+    margin-left: .2133rem;
+    text-align: left;
+    overflow: hidden;
+}
+
+.share-app-name span {
+    display: block;
+    width: 1.1733rem;
+    height: .4rem;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    background: url(../img/share-app-name.png) no-repeat;
+    background-size: cover;
+}
+
+.share-app-name p {
+    font-size: .4267rem;
+    color: #283e53;
+    font-weight: 700;
+}
+
+p.app-introduce-text {
+    width: 4.9333rem;
+    height: auto;
+    line-height: .5rem;
+    /*margin-top: .88rem;*/
+    margin-left: .48rem;
+    font-size: .3733rem;
+    font-weight: 700;
+    color: #6c6c6c;
+}
+
+
+/*＊＊＊＊＊＊＊＊＊Module-2 ＊＊＊＊＊＊＊＊＊*/
+
+section.app-advantage {
+	
+    width: 100%;
+    overflow: hidden;
+ 
+     padding:0px; 
+}
+
+p.app-t {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: .6133rem;
+    margin-bottom: .72rem;
+    color: #283e53;
+    font-size: .4267rem!important;
+}
+
+.item-container {   
+ 
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: .2rem;  
+    padding-top: .2rem; 
+    /* background-color: yellow;*/
+}
+
+
+/* 模块二所有小图标 */
+
+.item-icon {
+    display: block;
+    width: 1.0667rem;
+    height: 1.0667rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-size: .7467rem .7467rem;
+    z-index: 3;
+}
+
+.item-icon-1 {
+    float: left;
+    margin-left: .4rem;
+    margin-right: .24rem;
+    background: #8ad3dc url(../img/share-net.png) no-repeat center center;
+}
+
+.item-icon-2 {
+    float: right;
+    margin-right: .4rem;
+    background: #8edc8a url(../img/share-computer.png) no-repeat center center;
+}
+
+.item-icon-3 {
+    float: left;
+    margin-left: .4rem;
+    margin-right: .24rem;
+    background: #8a9ddc url(../img/share-rocket.png) no-repeat center center;
+}
+
+.item-icon-4 {
+    float: right;
+    margin-right: .4rem;
+    background: #d18adc url(../img/share-radar.png) no-repeat center center;
+}
+
+.item-icon-5 {
+    float: left;
+    margin-left: .4rem;
+    margin-right: .24rem;
+    background: #dcaf8a url(../img/share-show-dw.png) no-repeat center center;
+}
+
+.item-icon-6 {
+    float: right;
+    margin-right: .4rem;
+    background: #dc8a9d url(../img/share-show-l.png) no-repeat center center;
+}
+
+
+/*文字*/
+
+.item-text {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.item-text span {
+    color: #283e53;
+    font-size: .3733rem;
+}
+
+.item-text p {
+    width: 6.6667rem;
+    line-height: .5rem;
+    overflow: hidden;
+    margin-top: .1867rem;
+    font-size: .3467rem;
+    color: #90908e;
+}
+
+.sp-1,
+.p-1 {
+    float: left;
+    margin-left: .24rem;
+}
+
+.sp-2 {
+    float: right;
+    margin-right: .24rem;
+}
+
+.p-2 {
+    float: right;
+    margin-right: .24rem;
+}
+
+.sp-3 {
+    float: left;
+    margin-left: .24rem;
+}
+
+.p-3 {
+    float: left;
+    margin-left: .24rem;
+}
+
+.sp-4 {
+    float: right;
+    margin-right: .24rem;
+}
+
+.p-4 {
+    float: right;
+    text-align: right;
+    margin-right: .24rem;
+}
+
+.sp-5 {
+    float: left;
+    margin-left: .24rem;
+}
+
+.p-5 {
+    float: left;
+    margin-left: .24rem;
+}
+
+.sp-6 {
+    float: right;
+    margin-right: .24rem;
+}
+
+.p-6 {
+    float: right;
+    text-align: right;
+    margin-right: .44rem;
+}
+
+
+
+/*＊＊＊＊＊＊＊＊＊Module-3 ＊＊＊＊＊＊＊＊＊*/
+
+section.app-bg-mid {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.app-bg-mid div {
+    width: 100%;
+    height: 2.6667rem;
+    margin-top: .2133rem;
+    background: url(../img/share-bg-mid.png) no-repeat;
+    background-size: cover;
+}
+
+
+/*＊＊＊＊＊＊＊＊＊Module-4 ＊＊＊＊＊＊＊＊＊*/
+
+.up {
+    
+    width: 100%;
+    height: .5333rem;
+    line-height: .5333rem;
+    margin: 0 auto;
+    margin-bottom:.1867rem;
+    text-align: left;
+}
+
+
+/* 图标和标题 */
+
+.up span,
+.up p {
+   
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: .1867rem;
+    color: #283e53;
+    font-size: .3733rem;
+}
+
+.up span{
+     margin-left: .24rem;
+}
+
+.up span {
+    display: inline-block;
+    width: .5333rem;
+    height: .5333rem;
+    margin-left: .4rem;
+    margin-right: .24rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-size: .5333rem .5333rem;
+}
+
+.item-icon-7 {
+    background: url(../img/share-corp-info.png) no-repeat center center;
+}
+
+.item-icon-8 {
+    background: url(../img/share-search.png) no-repeat center center;
+}
+
+.item-icon-9 {
+    background: url(../img/share-main-usr.png) no-repeat center center;
+}
+
+.item-icon-10 {
+    background: url(../img/share-sub-org.png) no-repeat center center;
+}
+
+.item-icon-11 {
+    background: url(../img/share-comment.png) no-repeat center center;
+}
+
+.item-icon-12 {
+    background: url(../img/share-report.png) no-repeat center center;
+}
+
+.item-icon-13 {
+    background: url(../img/share-change.png) no-repeat center center;
+}
+
+.item-icon-14 {
+    background: url(../img/share-ts.png) no-repeat center center;
+}
+
+p.detail {
+    float: left;
+    line-height: .5rem;
+    margin-left: .24rem;
+    margin-right: .24rem;
+    font-size: .3467rem;
+    color: #90908e;
+}
+
+ 

@@ -1,0 +1,394 @@
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body { 
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+    /* winphone8和android4+ */
+    -webkit-overflow-scrolling: touch;
+    /* ios5+ */
+    z-index: 1;
+}
+
+.changeRecord-wrapper {
+	overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #fff;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+    width: 100%;
+}
+
+
+/* 公司名 */
+
+p.corp-name {
+    width: 100%;
+    height: 1.0667rem;
+    line-height: 1.0667rem;
+    margin-left: 0;
+    margin-top: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: #939ea9;
+    font-size: .3467rem;
+    z-index: 99;
+}
+
+
+/* 模块一的头（icon和时间） */
+
+.icon-and-time-1,
+.icon-and-time-2,
+.icon-and-time-3{
+    width: 100%;
+    height: .46rem;
+    line-height: .46rem;
+    /* background-color: yellow;*/
+}
+
+.icon-and-time-1 {
+    margin-top: .2667rem;
+}
+
+.icon-and-time-1 span,
+.icon-and-time-2 span,
+.icon-and-time-3 span {
+    display: block;
+    float: left;
+    min-width: .4533rem;
+    min-height: .4533rem;
+    margin-left: .24rem;
+    /*  margin-bottom: .46rem;*/
+    background: url(../img/change-node.png) no-repeat;
+    background-size: cover;
+}
+
+.icon-and-time-1 p,
+.icon-and-time-2 p,
+.icon-and-time-3 p {
+    float: left;
+    height: .46rem;
+    line-height: .46rem;
+    margin-left: .4267rem;
+    color: #939ea9;
+    font-size: .3733rem;
+}
+
+
+/* 变更内容 */
+
+.change-content {
+    width: 95%;
+    min-height: 1rem;
+    margin-left: .4267rem;
+    border-left: .08rem solid #52b4ff;
+    overflow: hidden;
+}
+
+.model-name {
+     float: left;
+    width: 8.5333rem;
+    height: .4267rem;
+    overflow-x: hidden;
+    margin-left: .4267rem;
+    margin-top: .224rem;
+    padding-bottom: .24rem;
+    font-size: .4267rem;
+    color: #283e53;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+/* 变更前，变更后名字 */
+
+.inner-name-left,
+.inner-name-right {
+    float: left;
+    margin-top: .24rem;
+    font-size: .3733rem;
+    color: #ccc;
+    text-align: left;
+}
+
+.inner-name-left {
+    width: 50%;
+    margin-left: .4267rem;
+}
+
+.inner-name-right {
+    width: 36%;
+    margin-left: .2667rem;
+}
+
+
+/* 变更内容 */
+
+.inner-left-1,
+.inner-right-1,
+.inner-left-2,
+.inner-right-2,
+.inner-left-3,
+.inner-right-3  {
+    float: left;
+    min-width: 30%;
+    min-height: 1rem;
+    margin-top: .24rem;
+    font-size: .4267rem;
+    color: #283e53;
+    overflow: hidden;
+}
+
+.inner-left-1,
+.inner-left-2,
+.inner-left-3 {
+    margin-left: .4267rem;
+    border-right: 2px solid #f2f2f2;
+    padding-right: .4rem;
+}
+
+.inner-right-1,
+.inner-right-2,
+.inner-right-3 {
+    margin-left: .2667rem;
+}
+
+
+
+.inner-left-1 ul,
+.inner-right-1 ul,
+.inner-left-2 ul,
+.inner-right-2 ul,
+.inner-left-3 ul,
+.inner-right-3 ul  {
+    list-style: none;
+}
+
+
+/* Li行高 */
+
+.inner-left-1 ul li,
+.inner-right-1 ul li,
+.inner-left-2 ul li,
+.inner-right-2 ul li,
+.inner-left-3 ul li,
+.inner-right-3 ul li  {
+    line-height: .618rem;
+}
+
+
+/* 注册资本和股东 */
+
+.inner-left-1 ul li:nth-of-type(1),
+.inner-left-1 ul li:nth-of-type(1) p,
+.inner-left-1 ul li:nth-of-type(3),
+.inner-left-1 ul li:nth-of-type(3) p,
+.inner-right-1 ul li:nth-of-type(1),
+.inner-right-1 ul li:nth-of-type(1) p,
+.inner-right-1 ul li:nth-of-type(3),
+.inner-right-1 ul li:nth-of-type(3) p,
+.inner-left-2 ul li:nth-of-type(1),
+.inner-left-2 ul li:nth-of-type(1) p{
+    float: left;
+}
+
+
+/* 股东 、机构代码*/
+
+.gd-left,
+.gd-right{
+    float: left;
+    display: block;
+    width: 2.64rem;
+    min-height: 1rem;
+    line-height: .618rem;
+    overflow: hidden;
+    /* text-align:justify;*/
+    /*text-justify:inter-ideograph;*/
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+.s2-li2-div-name,
+.s2-li2-div-content,
+.s3-li2-div-name,
+.s3-li2-div-content{
+    float: left;
+}
+
+.s2-li2-div-content,
+.s3-li2-div-content,
+.inner-right-3 li p{
+    width: 2.64rem;
+    min-height: 1rem;
+    line-height: .618rem;
+    overflow: hidden;
+    /* text-align:justify;*/
+    /*text-justify:inter-ideograph;*/
+    word-wrap: break-word;
+    word-break: normal;
+}
+/* 单位和公司性质 */
+
+.inner-left ul li:nth-of-type(2),
+.inner-right ul li:nth-of-type(2) {
+    margin-left: 2.0533rem;
+}
+
+
+/* “美元距下间隔” */
+
+.inner-left li:nth-of-type(2),
+.inner-right li:nth-of-type(2) {
+    margin-bottom: .32rem;
+}
+
+
+/* 下划线 */
+
+.bottom-line {
+    float: left;
+    width: 8.5333rem;
+    margin-left: .4267rem;
+    margin-top: .24rem;
+    margin-bottom: .48rem;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+/*****Popwin-Begin*****/
+
+.popwin-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 49;
+}
+
+.download-banner {
+    position: absolute;
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 50;
+}
+
+.download-banner p {
+    width: 75%;
+    line-height: 0.5rem;
+    color: #a8a8a8;
+    word-break: normal;
+    white-space: normal;
+    text-align: center;
+    font-size: .32rem;
+}
+
+.download-banner p:nth-of-type(1) {
+    margin-top: 0.3rem;
+}
+
+button.download {
+    position: absolute;
+    width: 18%;
+    height: .8rem;
+    top: 0;
+    right: .4rem;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    background-color: #44b7ff;
+    font-size: .5rem;
+    font-weight: normal;
+    color: #fff;
+    border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+}
+
+
+/*****Popwin-End*****/
+/*Shake style*/
+
+.shake {
+    animation: shake .5s 3;
+    -webkit-animation: shake .5s 3;
+    /* Safari 和 Chrome */
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes shake {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+
+
+

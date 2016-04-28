@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    outline: 0;
+    -webkit-text-size-ajust: none;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    -webkit-user-select: none;
+    background-color: #f2f2f2;
+}
+
+.corp-deatil-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*Shake style*/
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes shake {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+/*Shake style*/
+
+.shake {
+    animation: shake .8s 3;
+    -webkit-animation: shake .8s 3;
+    /* Safari 和 Chrome */
+}
+
+
+/***** 模块一 *****/
+
+.module-1 {
+    position: absolute;
+    height: 3.2rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding-left: 2.1333rem;
+    padding-right: 2.1333rem;
+    background-color: #283e53;
+    z-index: 1;
+}
+
+
+/* 公司名滚动容器 */
+.button {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: .48rem;
+    line-height: .48rem;
+    margin-top: .26667rem;
+    margin-bottom: .26667rem;
+    color: #fff;
+    overflow: hidden;
+}
+
+.button-inner {
+    position: absolute;
+    left: .08rem;
+    top: 0;
+    width: 6.6667rem;
+}
+
+.button-inner span {
+    display: inline-block;
+    width: 10.67rem;
+    font-size: .48rem;
+    overflow: hidden;
+}
+
+
+/*简介按钮*/
+
+.corp-name-intro {
+    position: absolute;
+    width: .72rem;
+    height: .3733rem;
+    top: .3733rem;
+    right: 1.2rem;
+    background-color: #293e53;
+    border: none;
+    font-size: .3467rem;
+    color: #55ffdd;
+}
+
+
+/*属性*/
+
+.corp-attr {
+    position: relative;
+    float: left;
+    display: inline;
+    width: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.corp-attr-name {
+    float: left;
+    margin-left: 9%;
+    padding-right: .5rem;
+    text-align: left;
+    font-size: .3467rem;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.corp-attr-state {
+    float: right;
+    margin-right: 18%;
+    min-width: .9733rem;
+    height: .5rem;
+    line-height: .5rem;
+    /*margin-left: .618rem;*/
+    background-color: #293e53;
+    border: none;
+    font-size: .32rem;
+    color: #1d87c9;
+    border: 1px solid #1d87c9;
+    border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    padding-bottom: .2rem;
+}
+
+
+/*更新*/
+
+.corp-update {
+    float: left;
+    width: 4.0533rem;
+    height: .6667rem;
+    line-height: .6667rem;
+    margin-left: 12%;
+    margin-top: .4rem;
+    background-color: #44b7ff;
+    border: 1px solid #357cc0;
+    border-radius: .3333rem;
+    -moz-border-radius: .3333rem;
+    -webkit-border-radius: .3333rem;
+}
+
+.corp-update-t span,
+.corp-update-t p {
+    float: left;
+    font-size: .3467rem;
+    color: #fff;
+}
+
+.corp-update-t span {
+    margin-left: .32rem;
+}
+
+.corp-update-t p {
+    margin-left: 0;
+}
+
+.corp-update-icon {
+    float: right;
+    width: .6667rem;
+    height: .6667rem;
+    line-height: .6667rem;
+    margin-right: .32rem;
+    background: url(../img/shuaxin@2x.png)no-repeat;
+    background-size: cover;
+}
+
+
+/*****模块二*****/
+
+.module-2 {
+    position: absolute;
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.2rem;
+    top: 3.1733rem;
+    left: 0;
+    background-color: #223547;
+    color: #fff;
+}
+
+.corp-info-1,
+.corp-info-2,
+.corp-info-3 {
+    float: left;
+    width: 33.3333%;
+    height: 1.6rem;
+    text-align: center;
+}
+
+.corp-info-usr,
+.corp-info-role,
+.corp-info-capital,
+.corp-info-capital-name,
+.corp-info-create-t,
+.corp-info-create-name {
+    color: #fff;
+    height: .5rem;
+}
+
+.corp-info-usr,
+.corp-info-capital,
+.corp-info-create-t {
+    font-size: .4rem;
+}
+
+.corp-info-role,
+.corp-info-capital-name,
+.corp-info-create-name {
+    font-size: .32rem;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+
+/*****模块三*****/
+
+.module-3 {
+    width: 100%;
+}
+
+.browse-contact {
+    position: absolute;
+    width: 100%;
+    height: 1.0667rem;
+    line-height: 1.0667rem;
+    left: 0;
+    top: 4.8rem;
+    background-color: #fff;
+}
+
+.browse-contact span {
+    position: absolute;
+    display: block;
+    width: .56rem;
+    height: .56rem;
+    top: 0;
+    bottom: 0;
+    right: .4rem;
+    margin: auto;
+    background: url(../img/jiaohap@2x.png)no-repeat;
+    background-size: cover;
+}
+
+.browse-contact p {
+    margin-left: .4rem;
+    font-weight: 700;
+    font-size: .4rem;
+    color: #223547;
+}
+
+
+/*****模块四*****/
+
+.module-4 {
+    width: 100%;
+}
+
+.box-container {
+    position: relative;
+    width: 100%;
+    margin-top: 6.0267rem;
+}
+
+.box {
+    float: left;
+    width: 24.72%;
+    height: 2.1333rem;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    display: inline-block;
+}
+
+
+/*头排*/
+
+.box:nth-of-type(1),
+.box:nth-of-type(2),
+.box:nth-of-type(3),
+.box:nth-of-type(4) {
+    border-top: 1px solid #e0e0e0;
+}
+
+
+/*除最后列的box*/
+
+.box:nth-of-type(1),
+.box:nth-of-type(2),
+.box:nth-of-type(3),
+.box:nth-of-type(5),
+.box:nth-of-type(6),
+.box:nth-of-type(7),
+.box:nth-of-type(9),
+.box:nth-of-type(10),
+.box:nth-of-type(11),
+.box:nth-of-type(13),
+.box:nth-of-type(14),
+.box:nth-of-type(15) {
+    border-right: 1px solid #e0e0e0;
+}
+
+.box span {
+    display: block;
+    width: .8267rem;
+    height: .8267rem;
+    margin: 0 auto;
+    margin-top: .3733rem;
+}
+
+.box p {
+    margin-top: .2133rem;
+    color: #223547;
+    font-size: .3467rem;
+}
+
+.gsxx {
+    background: url(../img/gsxx-on.png)no-repeat;
+    background-size: cover;
+}
+
+.bgxx {
+    background: url(../img/bgxx-on.png)no-repeat;
+    background-size: cover;
+}
+
+.dwtz {
+    background: url(../img/dwtz-on.png)no-repeat;
+    background-size: cover;
+}
+
+.qynb {
+    background: url(../img/qynb-on.png)no-repeat;
+    background-size: cover;
+}
+
+.fygg {
+    background: url(../img/fygg-on.png)no-repeat;
+    background-size: cover;
+}
+
+.fypj {
+    background: url(../img/fypj-on.png)no-repeat;
+    background-size: cover;
+}
+
+.sxxx {
+    background: url(../img/sxxx-on.png)no-repeat;
+    background-size: cover;
+}
+
+.bzxr {
+    background: url(../img/bzxr-on.png)no-repeat;
+    background-size: cover;
+}
+
+.zzzs {
+    background: url(../img/zzzs-on.png)no-repeat;
+    background-size: cover;
+}
+
+.zlxx {
+    background: url(../img/zlxx-on.png)no-repeat;
+    background-size: cover;
+}
+
+.zzq {
+    background: url(../img/zzq-on.png)no-repeat;
+    background-size: cover;
+}
+
+.sbxx {
+    background: url(../img/sbxx-on.png)no-repeat;
+    background-size: cover;
+}
+
+.qytp {
+    background: url(../img/qytp-on.png)no-repeat;
+    background-size: cover;
+}
+
+.fzlc {
+    background: url(../img/fzlc-on.png)no-repeat;
+    background-size: cover;
+}
+
+.qyxw {
+    background: url(../img/qyxw-on.png)no-repeat;
+    background-size: cover;
+}
+
+.qyzp {
+    background: url(../img/qyzp-on.png)no-repeat;
+    background-size: cover;
+}
+
+
+/*****模块五*****/
+
+.module-5 {
+    width: 100%;
+    /* margin-top: 88.357%;*/
+}
+
+.menu-container {
+    position: fixed;
+    width: 100%;
+    height: 1.0667rem;
+    line-height: 1.0667rem;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: .4rem;
+    color: #223547;
+}
+
+.menu-container ul {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.menu-container ul li {
+    float: left;
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+    list-style: none;
+}
+
+.menu-comment,
+.menu-concern,
+.menu-report {
+    height: 1.0667rem;
+}
+
+.menu-comment span,
+.menu-concern span,
+.menu-report span {
+    display: block;
+    position: absolute;
+    width: .64rem;
+    height: .64rem;
+    top: 0;
+    bottom: 0;
+    margin-left: 0.5rem;
+    margin: auto;
+}
+
+.menu-comment span {
+    left: .96rem;
+    background: url(../img/pj.png)no-repeat;
+    background-size: cover;
+}
+
+.menu-concern span {
+    left: 4.2933rem;
+    background: url(../img/gz.png)no-repeat;
+    background-size: cover;
+}
+
+.menu-report span {
+    left: 7.2533rem;
+    background: url(../img/xybg.png)no-repeat;
+    background-size: cover;
+}
+
+.menu-comment a,
+.menu-concern a,
+.menu-report a {
+    display: block;
+    margin-left: 1rem;
+}
+
+
+/*****Popwin*****/
+
+.popwin-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 49;
+}
+
+.download-banner {
+    position: absolute;
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 50;
+}
+
+.download-banner p {
+    width: 75%;
+    line-height: .5rem;
+    color: #a8a8a8;
+    word-break: normal;
+    white-space: normal;
+    text-align: center;
+    font-size: .32rem;
+    z-index: 51;
+}
+
+.download-banner p:nth-of-type(1) {
+    margin-top: 0.3rem;
+}
+
+button.download {
+    position: absolute;
+    width: 20%;
+    height: 1rem;
+    top: 0;
+    right: .4rem;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    background-color: #44b7ff;
+    font-size: .5rem;
+    font-weight: normal;
+    color: #fff;
+    border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+}

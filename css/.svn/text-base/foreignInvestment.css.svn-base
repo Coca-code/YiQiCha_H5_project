@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    /* winphone8和android4+ */
+    -webkit-overflow-scrolling: touch;
+    /* ios5+ */
+    z-index: 1;
+}
+
+
+/* 投资项目 */
+
+section.invest-item {
+    width: 100%;
+    z-index: 2;
+}
+
+.invest-item ul {
+    list-style: none;
+    margin: 0;
+}
+
+.invest-item ul li {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #939ea9;
+    border-bottom: 1px solid #939ea9;
+    /*padding-top: .4rem;*/
+    padding-bottom: .4rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.invest-item ul li:not(:first-child) {
+    margin-top: .2667rem;
+}
+
+
+/* 一item里上部宽高 */
+
+.invest-item-top,
+.invest-item-down {
+    width: 100;
+    min-height: 1rem;
+    overflow: hidden;
+}
+
+.invest-item-top {
+    position: relative;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    margin-left: .3467rem;
+    border-bottom: 2px solid #f2f2f2;
+    transform-style: preserve-3d;
+}
+
+.invest-item-top button,
+.invest-item-top span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* 存续按钮 */
+
+.invest-item-top button {
+    min-width: .9867rem;
+    height: .5333rem;
+    right: 1.0933rem;
+    font-size: .3467rem;
+    color: #44b7ff;
+    background-color: #fff;
+    border: 2px solid #44b7ff;
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+}
+
+
+/* 箭头 */
+
+.invest-item-top span {
+    display: block;
+    width: .3467rem;
+    height: .3467rem;
+    right: .3467rem;
+    background: url(../img/invest-right-arro.png) no-repeat;
+    background-size: cover;
+}
+
+
+/* 对外投资企业名 */
+
+.invest-item-top p {
+    float: left;
+    font-size: .4267rem;
+    color: #283e53;
+}
+
+
+/* 一item下面的部分 */
+
+.invest-item-down div {
+    float: left;
+    width: 33%;
+    margin-top: .32rem;
+    min-height: 1rem;
+    text-align: center;
+}
+
+.invest-item-down div:not(:last-child) {
+    border-right: 2px solid #f2f2f2;
+}
+
+.down-left p:nth-of-type(1),
+.down-mid p:nth-of-type(1),
+.down-right p:nth-of-type(1) {
+    margin-bottom: .24rem;
+    color: #283e53;
+    font-size: .4rem;
+}
+
+.down-left p:nth-of-type(2),
+.down-mid p:nth-of-type(2),
+.down-right p:nth-of-type(2){
+	font-size: .3467rem;
+	color:#939ea9;
+}
+
+
+/* 公司名 */
+
+p.corp-name {
+    width: 100%;
+    height: 1.0667rem;
+    line-height: 1.0667rem;
+    margin-left: 0;
+    margin-top: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: #939ea9;
+    font-size: .3467rem;
+    /**/
+    z-index: 99;
+}
+
+
+/*Shake style*/
+
+.shake {
+    animation: shake .5s 3;
+    -webkit-animation: shake .5s 3;
+    /* Safari 和 Chrome */
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes shake {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -8deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 8deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -8deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+/*****Popwin-Begin*****/
+
+.popwin-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 49;
+}
+
+.download-banner {
+    position: absolute;
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 50;
+}
+
+.download-banner p {
+    width: 75%;
+    line-height: 0.5rem;
+    color: #a8a8a8;
+    word-break: normal;
+    white-space: normal;
+    text-align: center;
+    font-size: .32rem;
+}
+
+.download-banner p:nth-of-type(1) {
+    margin-top: 0.3rem;
+}
+
+button.download {
+    position: absolute;
+    width: 18%;
+    height: .8rem;
+    top: 0;
+    right: .4rem;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    background-color: #44b7ff;
+    font-size: .5rem;
+    font-weight: normal;
+    color: #fff;
+    border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+}
+
+
+/*****Popwin-End*****/

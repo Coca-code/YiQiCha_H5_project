@@ -1,0 +1,40 @@
+/*----------------------------------------+
+ * @DESC:        积分说明样式
+ * @KEYNOTE:     Just a staic page of rule. 
+ * @AUTHOR:      ymf_wx1981@hotmail.com
+ * @CREATE TIME: 2016-4-6 16:48
+ *----------------------------------------*/
+
+ /*什么是积分*/
+.what-credits
+,.get-credits
+,.use-credits
+,.expire-credits{
+ 	display: block;
+ 	float: left;
+ 	width: 100%;
+ 	height: 1.0667rem;
+ 	line-height: 1.0667rem;
+ 	margin-left: .3467rem;
+ 	margin-bottom: .618em;
+ 	text-align: left;
+ 	font-size: .48rem;
+ 	color:#283e53;
+ 	border-bottom: 1px solid #f2f2f2;
+ }
+
+ .what-credits-content
+ ,.get-credits-content-1
+ ,.get-credits-content-2
+ ,.get-credits-content-3
+ ,.get-credits-content-4
+ ,.get-credits-content-5
+ ,.get-credits-content-6
+ ,.use-credits-content
+ ,.expire-credits-content{
+ 	line-height: .8rem;
+ 	padding-left: .9333rem;
+ 	padding-right:.9333rem;
+ 	font-size: .3733rem;
+ 	color:#939ea9;
+ }
